@@ -51,20 +51,20 @@
 &kp Q         &kp W         &kp E             &kp R                 &kp T                                      &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A         &kp S         &kp D             &kp F                 &kp G        &trans         &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp MINUS
 &kp Z         &kp X         &kp C             &kp V                 &kp B        &lt 4 COLON    &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_CONTROL  &mt LEFT_SHIFT LANG2  &lt 1 SPACE  &lt 3 LANG1    &kp BACKSPACE  &lt 2 ENTER                             &kp RIGHT_SHIFT
+&kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_CONTROL  &mt LEFT_SHIFT LANG2  &lt 1 SPACE  &lt 3 LANG1    &kp BACKSPACE  &lt 2 ENTER                             &kp RIGHT_SHIFT
             >;
 
             sensor-bindings =
-                <&scroll_up_down>,
+                <&inc_dec_kp LG(PLUS) LG(MINUS)>,
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &kp F12
+&kp ESCAPE  &kp F2  &kp LG(LEFT_ARROW)  &kp LG(RIGHT)  &kp LS(NUMBER_1)                    &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
+&kp TAB     &trans  &trans              &trans         &trans            &trans    &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
+&trans      &trans  &trans              &trans         &trans            &trans    &trans  &trans  &trans  &trans  &trans  &kp F11
+&trans      &trans  &trans              &trans         &trans            &trans    &trans  &trans                          &kp F12
             >;
 
             sensor-bindings = <&scroll_up_down>;
