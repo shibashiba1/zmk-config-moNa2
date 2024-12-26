@@ -61,10 +61,10 @@
 
         layer_1 {
             bindings = <
-&kp ESCAPE        &kp F2            &kp LG(LEFT_ARROW)  &kp LG(RIGHT)  &kp LS(NUMBER_1)                    &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&kp TAB           &kp LS(NUMBER_6)  &kp AT              &kp LS(N8)     &kp LS(NUMBER_9)  &trans    &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&kp LS(NUMBER_4)  &trans            &kp LG(PERIOD)      &trans         &trans            &trans    &trans  &trans  &trans  &trans  &trans  &kp F11
-&trans            &trans            &trans              &trans         &trans            &trans    &trans  &trans                          &kp F12
+&kp ESCAPE        &kp F2             &kp LG(LEFT_ARROW)  &kp LG(RIGHT)  &kp LS(NUMBER_1)                     &kp LA(TAB)              &kp LA(ESC)     &kp LG(D)       &kp LG(LC(LEFT_ARROW))  &kp LG(LC(RIGHT_ARROW))
+&kp TAB           &kp LS(N7)         &kp LS(N2)          &kp LS(N9)     &kp LS(N0)        &trans    &trans   &kp LS(LG(RIGHT_ARROW))  &mkp MB1        &kp UP_ARROW    &mkp MB2                &kp LG(UP_ARROW)
+&kp LS(NUMBER_4)  &kp LS(BACKSLASH)  &kp LG(PERIOD)      &kp LS(N5)     &kp LS(N3)        &trans    &trans   &kp TILDE                &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW         &kp LS(APOS)
+&kp LEFT_SHIFT    &trans             &trans              &trans         &trans            &trans    &kp DEL  &trans                                                                           &kp APOS
             >;
 
             sensor-bindings = <&scroll_up_down>;
