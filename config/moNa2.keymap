@@ -49,7 +49,7 @@
         win_0 {
             bindings = <
 &kp Q         &kp W         &kp E             &kp R                 &kp T                                      &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A         &kp S         &kp D             &kp F                 &kp G        &trans         &to 8          &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&kp A         &kp S         &kp D             &kp F                 &kp G        &trans         &trans         &kp H        &kp J  &kp K      &kp L    &kp MINUS
 &kp Z         &kp X         &kp C             &kp V                 &kp B        &kp LC(N0)     &to 4          &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_CONTROL  &mt LEFT_SHIFT LANG2  &lt 1 SPACE  &lt 3 LANG1    &kp BACKSPACE  &lt 2 ENTER                             &kp RIGHT_SHIFT
             >;
@@ -59,22 +59,22 @@
 
         win_1 {
             bindings = <
-&kp ESCAPE        &kp F2             &kp LG(LEFT_ARROW)  &kp LG(RIGHT)  &kp LS(NUMBER_1)                     &trans                   &trans          &trans          &trans           &trans
-&kp TAB           &kp LS(N7)         &kp LS(N2)          &kp LS(N9)     &kp LS(N0)        &trans    &trans   &kp LS(LG(RIGHT_ARROW))  &mkp MB1        &kp UP_ARROW    &mkp MB2         &kp LG(UP_ARROW)
-&kp LS(NUMBER_4)  &kp LS(BACKSLASH)  &kp LG(PERIOD)      &kp LS(N5)     &kp LS(N3)        &trans    &trans   &kp TILDE                &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(APOS)
-&kp LEFT_SHIFT    &trans             &trans              &trans         &trans            &trans    &kp DEL  &trans                                                                    &kp APOS
+&kp ESCAPE        &kp F2             &kp LG(LEFT_ARROW)  &kp LG(RIGHT)  &kp LS(NUMBER_1)                         &trans                   &trans          &trans          &trans           &trans
+&kp TAB           &kp LS(N7)         &kp LS(N2)          &kp LS(N9)     &kp LS(N0)        &trans    &bootloader  &kp LS(LG(RIGHT_ARROW))  &mkp MB1        &kp UP_ARROW    &mkp MB2         &kp LG(UP_ARROW)
+&kp LS(NUMBER_4)  &kp LS(BACKSLASH)  &kp LG(PERIOD)      &kp LS(N5)     &kp LS(N3)        &trans    &trans       &kp TILDE                &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(APOS)
+&kp LEFT_SHIFT    &trans             &trans              &trans         &trans            &trans    &kp DEL      &trans                                                                    &kp APOS
             >;
         };
 
         win_2 {
             bindings = <
-&kp MINUS             &kp N7  &kp N8     &kp N9        &kp PLUS                                               &trans                  &trans               &kp LG(TAB)  &kp LG(D)        &kp PRINTSCREEN
-&kp SLASH             &kp N4  &kp N5     &kp N6        &kp ASTERISK      &trans               &kp UNDERSCORE  &kp LG(LC(LEFT_ARROW))  &kp LS(TAB)          &kp COLON    &kp TAB          &kp LG(LC(RIGHT_ARROW))
-&mt LEFT_SHIFT UNDER  &kp N1  &kp N2     &kp N3        &kp EQUAL         &kp CARET            &trans          &kp LA(LEFT_ARROW)      &kp LA(RIGHT_ARROW)  &kp LC(W)    &kp LC(LS(TAB))  &kp LC(TAB)
-&kp LEFT_SHIFT        &kp N0  &kp UNDER  &kp LEFT_ALT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &trans          &trans                                                                     &trans
+&kp MINUS             &kp N7  &kp N8     &kp N9        &kp PLUS                                       &trans                  &trans               &kp LG(TAB)  &kp LG(D)        &kp PRINTSCREEN
+&kp SLASH             &kp N4  &kp N5     &kp N6        &kp ASTERISK      &trans               &trans  &kp LG(LC(LEFT_ARROW))  &kp LS(TAB)          &kp COLON    &kp TAB          &kp LG(LC(RIGHT_ARROW))
+&mt LEFT_SHIFT UNDER  &kp N1  &kp N2     &kp N3        &kp EQUAL         &kp K_MUTE           &trans  &kp LA(LEFT_ARROW)      &kp LA(RIGHT_ARROW)  &kp LC(W)    &kp LC(LS(TAB))  &kp LC(TAB)
+&kp LEFT_SHIFT        &kp N0  &kp UNDER  &kp LEFT_ALT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &trans  &trans                                                                     &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp F6 F5>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         setting {
@@ -88,10 +88,10 @@
 
         iPad_0 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &to 0   &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &tog 7    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+&kp Q             &kp W         &kp E             &kp R                 &kp T                                      &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S         &kp D             &kp F                 &kp G        &trans         &trans         &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&kp Z             &kp X         &kp C             &kp V                 &kp B        &tog 7         &to 0          &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &mt LEFT_SHIFT LANG2  &lt 5 SPACE  &lt 3 LANG1    &kp BACKSPACE  &lt 6 ENTER                             &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -99,57 +99,30 @@
 
         iPad_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+&kp ESCAPE        &kp F2             &kp LG(LEFT_ARROW)  &kp LG(RIGHT)  &kp LS(NUMBER_1)                     &trans     &trans          &trans          &trans           &trans
+&kp TAB           &kp LS(N7)         &kp LS(N2)          &kp LS(N9)     &kp LS(N0)        &trans    &trans   &trans     &mkp MB1        &kp UP_ARROW    &mkp MB2         &kp LG(LC(F))
+&kp LS(NUMBER_4)  &kp LS(BACKSLASH)  &kp LG(LC(SPACE))   &kp LS(N5)     &kp LS(N3)        &trans    &trans   &kp TILDE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(APOS)
+&kp LEFT_SHIFT    &trans             &trans              &trans         &trans            &trans    &kp DEL  &trans                                                      &kp APOS
             >;
         };
 
         iPad_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+&kp MINUS             &kp N7  &kp N8     &kp N9            &kp PLUS                                       &trans              &trans               &kp LC(UP_ARROW)  &kp LG(H)        &kp LG(LS(NUMBER_3))
+&kp SLASH             &kp N4  &kp N5     &kp N6            &kp ASTERISK      &trans               &trans  &kp LC(LEFT_ARROW)  &kp LS(TAB)          &kp COLON         &kp TAB          &kp LC(RIGHT_ARROW)
+&mt LEFT_SHIFT UNDER  &kp N1  &kp N2     &kp N3            &kp EQUAL         &kp K_MUTE           &trans  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)  &kp LC(W)         &kp LC(LS(TAB))  &kp LC(TAB)
+&kp LEFT_SHIFT        &kp N0  &kp UNDER  &kp LEFT_COMMAND  &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &trans  &trans                                                                      &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         left_mode {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans        &trans        &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &tog 4    &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans                                                  &bt BT_CLR_ALL
-            >;
-
-            sensor-bindings = <&scroll_up_down>;
-        };
-
-        mac_0 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &to 0   &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &to 4   &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
-            >;
-        };
-
-        mac_1 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
-            >;
-        };
-
-        mac_2 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+&kp LS(LG(BACKSLASH))  &kp LG(C)   &kp LG(NUMBER_4)  &kp LG(NUMBER_1)  &kp LG(LA(P))                           &trans  &trans  &trans  &trans  &trans
+&kp LA(LG(S))          &kp LG(N7)  &kp LG(NUMBER_2)  &kp LG(NUMBER_6)  &kp LA(LG(H))  &trans           &trans  &trans  &trans  &trans  &trans  &trans
+&kp M                  &kp T       &kp LG(NUMBER_3)  &kp L             &kp LG(A)      &tog 4           &trans  &trans  &trans  &trans  &trans  &trans
+&trans                 &trans      &kp LG(N5)        &kp DEL           &kp LG(Z)      &kp LS(LG(Z))    &trans  &trans                          &trans
             >;
         };
     };
