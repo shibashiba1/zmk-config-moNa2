@@ -112,7 +112,7 @@
             bindings = <
 &kp LS(LG(BACKSLASH))  &kp LG(C)   &kp LG(NUMBER_4)  &kp LG(NUMBER_1)  &kp LG(LA(P))                           &trans  &trans  &trans  &trans  &trans
 &kp LA(LG(S))          &kp LG(N7)  &kp LG(NUMBER_2)  &kp LG(NUMBER_6)  &kp LA(LG(H))  &trans           &trans  &trans  &trans  &trans  &trans  &trans
-&kp M                  &kp T       &kp LG(NUMBER_3)  &kp L             &kp LG(A)      &tog 3           &trans  &trans  &trans  &trans  &trans  &trans
+&kp M                  &kp T       &kp LG(NUMBER_3)  &kp L             &kp LG(A)      &tog 6           &trans  &trans  &trans  &trans  &trans  &trans
 &trans                 &trans      &kp LG(N5)        &kp DEL           &kp LG(Z)      &kp LS(LG(Z))    &trans  &trans                          &trans
             >;
         };
