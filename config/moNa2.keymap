@@ -15,24 +15,6 @@
 / {
     combos { compatible = "zmk,combos"; };
 
-    macros {
-        bt_win: bt_win {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&bt BT_SEL 0>, <&macro_wait_time 200>, <&to 0>;
-
-            label = "BT_WIN";
-        };
-
-        bt_pad: bt_pad {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1>, <&macro_wait_time 200>, <&to 3>;
-
-            label = "BT_PAD";
-        };
-    };
-
     behaviors {
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
