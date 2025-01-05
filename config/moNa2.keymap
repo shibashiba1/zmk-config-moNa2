@@ -41,6 +41,13 @@
             bindings = <&none>;
             label = "TO_LAYER_0";
         };
+
+        bt_win: bt_win {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "BT_WIN";
+        };
     };
 
     keymap {
