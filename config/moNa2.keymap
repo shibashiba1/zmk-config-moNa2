@@ -78,6 +78,20 @@
             bindings = <&kp LC(CLCK) &kp RIGHT>;
             label = "PAD_SPLIT_R";
         };
+
+        pad_split_change: pad_split_change {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(CLCK) &kp DOWN_ARROW>;
+            label = "PAD_SPLIT_CHANGE";
+        };
+
+        pad_slideover: pad_slideover {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp CLCK &kp BACKSLASH>;
+            label = "PAD_SLIDEOVER";
+        };
     };
 
     keymap {
