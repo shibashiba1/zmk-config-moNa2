@@ -159,10 +159,10 @@
 
         iPad_1 {
             bindings = <
-&kp ESCAPE        &kp F2             &kp LG(LEFT_ARROW)  &kp LG(RIGHT)  &kp LS(NUMBER_1)                     &trans     &trans          &trans          &trans           &trans
-&kp TAB           &kp LS(N7)         &kp LS(N2)          &kp LS(N9)     &kp LS(N0)        &trans    &trans   &trans     &mkp MB1        &kp UP_ARROW    &mkp MB2         &kp LG(LC(F))
-&kp LS(NUMBER_4)  &kp LS(BACKSLASH)  &kp LG(LC(SPACE))   &kp LS(N5)     &kp LS(N3)        &trans    &trans   &kp TILDE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(APOS)
-&kp LEFT_SHIFT    &trans             &trans              &trans         &trans            &trans    &kp DEL  &trans                                                      &kp APOS
+&kp ESCAPE        &kp F2             &pad_split_L       &pad_split_R  &kp LS(NUMBER_1)                     &trans     &trans          &pad_split_change  &trans           &pad_slideover
+&kp TAB           &kp LS(N7)         &kp LS(N2)         &kp LS(N9)    &kp LS(N0)        &trans    &trans   &trans     &mkp MB1        &kp UP_ARROW       &mkp MB2         &pad_fullscreen
+&kp LS(NUMBER_4)  &kp LS(BACKSLASH)  &kp LG(LC(SPACE))  &kp LS(N5)    &kp LS(N3)        &trans    &trans   &kp TILDE  &kp LEFT_ARROW  &kp DOWN_ARROW     &kp RIGHT_ARROW  &kp LS(APOS)
+&kp LEFT_SHIFT    &trans             &trans             &trans        &trans            &trans    &kp DEL  &trans                                                         &kp APOS
             >;
         };
 
