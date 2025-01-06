@@ -53,7 +53,7 @@
         bt_pad: bt_pad {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1>, <&macro_wait_time 200>, <&to 4>;
+            bindings = <&bt BT_SEL 1>, <&macro_wait_time 200>, <&to 3>;
 
             label = "BT_PAD";
         };
