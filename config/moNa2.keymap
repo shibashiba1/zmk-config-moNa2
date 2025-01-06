@@ -171,6 +171,8 @@
 &kp LS(NUMBER_4)  &kp LS(BACKSLASH)  &kp LG(LC(SPACE))  &kp LS(N5)    &kp LS(N3)        &trans    &trans   &kp TILDE  &kp LEFT_ARROW    &kp DOWN_ARROW     &kp RIGHT_ARROW   &kp LS(APOS)
 &kp LEFT_SHIFT    &trans             &trans             &trans        &trans            &trans    &kp DEL  &trans                                                            &kp APOS
             >;
+
+            sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
         };
 
         iPad_2 {
