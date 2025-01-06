@@ -57,6 +57,13 @@
 
             label = "BT_PAD";
         };
+
+        pad_fullscreen: pad_fullscreen {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp CLCK &kp F>;
+            label = "PAD_FULLSCREEN";
+        };
     };
 
     keymap {
