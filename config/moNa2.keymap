@@ -64,6 +64,20 @@
             bindings = <&kp CLCK &kp F>;
             label = "PAD_FULLSCREEN";
         };
+
+        pad_split_L: pad_split_L {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(CLCK) &kp LEFT_ARROW>;
+            label = "PAD_SPLIT_L";
+        };
+
+        pad_split_R: pad_split_R {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(CLCK) &kp RIGHT>;
+            label = "PAD_SPLIT_R";
+        };
     };
 
     keymap {
