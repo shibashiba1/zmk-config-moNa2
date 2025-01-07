@@ -58,34 +58,6 @@
             label = "BT_PAD";
         };
 
-        pad_fullscreen: pad_fullscreen {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp CLCK &kp F>;
-            label = "PAD_FULLSCREEN";
-        };
-
-        pad_split_L: pad_split_L {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(CLCK) &kp LEFT_ARROW>;
-            label = "PAD_SPLIT_L";
-        };
-
-        pad_split_R: pad_split_R {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(CLCK) &kp RIGHT>;
-            label = "PAD_SPLIT_R";
-        };
-
-        pad_split_change: pad_split_change {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(CLCK) &kp DOWN_ARROW>;
-            label = "PAD_SPLIT_CHANGE";
-        };
-
         pad_slideover: pad_slideover {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -157,10 +129,10 @@
 
         iPad_1 {
             bindings = <
-&kp ESCAPE        &kp LEFT_ARROW     &kp DOWN_ARROW     &kp RIGHT_ARROW  &kp LS(NUMBER_1)                              &trans            &pad_slideover_L  &pad_split_change  &pad_slideover_R  &pad_slideover
-&kp TAB           &kp LS(N7)         &kp LS(N2)         &kp LS(N9)       &kp LS(N0)        &trans    &kp LEFT_CONTROL  &kp LEFT_CONTROL  &mkp MB1          &kp UP_ARROW       &mkp MB2          &kp F
-&kp LS(NUMBER_4)  &kp LS(BACKSLASH)  &kp LG(LC(SPACE))  &kp LS(N5)       &kp LS(N3)        &trans    &trans            &kp TILDE         &kp LEFT_ARROW    &kp DOWN_ARROW     &kp RIGHT_ARROW   &kp LS(APOS)
-&kp LEFT_SHIFT    &trans             &trans             &trans           &trans            &trans    &kp DEL           &kp CLCK                                                                 &kp APOS
+&kp ESCAPE        &kp LEFT_ARROW     &kp DOWN_ARROW     &kp RIGHT_ARROW  &kp LS(NUMBER_1)                              &trans     &mkp MB4        &trans          &mkp MB5         &trans
+&kp TAB           &kp LS(N7)         &kp LS(N2)         &kp LS(N9)       &kp LS(N0)        &trans    &kp LEFT_CONTROL  &trans     &mkp MB1        &kp UP_ARROW    &mkp MB2         &kp F
+&kp LS(NUMBER_4)  &kp LS(BACKSLASH)  &kp LG(LC(SPACE))  &kp LS(N5)       &kp LS(N3)        &trans    &trans            &kp TILDE  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(APOS)
+&kp LEFT_SHIFT    &trans             &trans             &trans           &trans            &trans    &kp DEL           &kp CLCK                                                    &kp APOS
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
@@ -168,7 +140,7 @@
 
         iPad_2 {
             bindings = <
-&kp MINUS             &kp N7  &kp N8     &kp N9            &kp PLUS                                   &kp F2              &kp LG(Q)            &kp UP_ARROW  &kp LG(H)        &kp LG(LS(NUMBER_3))
+&kp MINUS             &kp N7  &kp N8     &kp N9            &kp PLUS                                   &kp F2              &mkp MB3             &kp UP_ARROW  &kp LG(H)        &kp LG(LS(NUMBER_3))
 &kp SLASH             &kp N4  &kp N5     &kp N6            &kp ASTERISK  &trans        &kp BACKSLASH  &kp LEFT_ARROW      &mkp MB1             &kp COLON     &mkp MB2         &kp RIGHT_ARROW
 &mt LEFT_SHIFT UNDER  &kp N1  &kp N2     &kp N3            &kp EQUAL     &kp C_MUTE    &trans         &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)  &kp LG(W)     &kp LC(LS(TAB))  &kp LC(TAB)
 &kp LEFT_ALT          &kp N0  &kp UNDER  &kp LEFT_COMMAND  &kp CLCK      &trans        &trans         &trans                                                                  &trans
