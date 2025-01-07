@@ -124,10 +124,10 @@
 
         win_1 {
             bindings = <
-&kp ESCAPE        &trans             &kp LG(LEFT_ARROW)  &kp LG(RIGHT)  &kp LS(NUMBER_1)                     &trans                   &trans          &trans          &trans           &trans
-&kp TAB           &kp LS(N7)         &kp LS(N2)          &kp LS(N9)     &kp LS(N0)        &trans    &trans   &kp LS(LG(RIGHT_ARROW))  &mkp MB1        &kp UP_ARROW    &mkp MB2         &kp LG(UP_ARROW)
-&kp LS(NUMBER_4)  &kp LS(BACKSLASH)  &kp LG(PERIOD)      &kp LS(N5)     &kp LS(N3)        &trans    &trans   &kp TILDE                &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(APOS)
-&kp LEFT_SHIFT    &trans             &trans              &trans         &trans            &trans    &kp DEL  &trans                                                                    &kp APOS
+&kp ESCAPE        &kp LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT)  &kp LS(NUMBER_1)                     &trans                   &trans          &trans          &trans           &trans
+&kp TAB           &kp LS(N7)          &kp LS(N2)          &kp LS(N9)     &kp LS(N0)        &trans    &trans   &kp LS(LG(RIGHT_ARROW))  &mkp MB1        &kp UP_ARROW    &mkp MB2         &kp LG(UP_ARROW)
+&kp LS(NUMBER_4)  &kp LS(BACKSLASH)   &kp LG(PERIOD)      &kp LS(N5)     &kp LS(N3)        &trans    &trans   &kp TILDE                &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(APOS)
+&kp LEFT_SHIFT    &trans              &trans              &trans         &trans            &trans    &kp DEL  &trans                                                                    &kp APOS
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
@@ -157,10 +157,10 @@
 
         iPad_1 {
             bindings = <
-&kp ESCAPE        &kp LEFT_ARROW     &kp DOWN_ARROW     &kp RIGHT_ARROW  &kp LS(NUMBER_1)                     &trans            &pad_slideover_L  &pad_split_change  &pad_slideover_R  &pad_slideover
-&kp TAB           &kp LS(N7)         &kp LS(N2)         &kp LS(N9)       &kp LS(N0)        &trans    &trans   &kp LEFT_CONTROL  &mkp MB1          &kp UP_ARROW       &mkp MB2          &kp F
-&kp LS(NUMBER_4)  &kp LS(BACKSLASH)  &kp LG(LC(SPACE))  &kp LS(N5)       &kp LS(N3)        &trans    &trans   &kp TILDE         &kp LEFT_ARROW    &kp DOWN_ARROW     &kp RIGHT_ARROW   &kp LS(APOS)
-&kp LEFT_SHIFT    &trans             &trans             &trans           &trans            &trans    &kp DEL  &kp CLCK                                                                 &kp APOS
+&kp ESCAPE        &kp LEFT_ARROW     &kp DOWN_ARROW     &kp RIGHT_ARROW  &kp LS(NUMBER_1)                              &trans            &pad_slideover_L  &pad_split_change  &pad_slideover_R  &pad_slideover
+&kp TAB           &kp LS(N7)         &kp LS(N2)         &kp LS(N9)       &kp LS(N0)        &trans    &kp LEFT_CONTROL  &kp LEFT_CONTROL  &mkp MB1          &kp UP_ARROW       &mkp MB2          &kp F
+&kp LS(NUMBER_4)  &kp LS(BACKSLASH)  &kp LG(LC(SPACE))  &kp LS(N5)       &kp LS(N3)        &trans    &trans            &kp TILDE         &kp LEFT_ARROW    &kp DOWN_ARROW     &kp RIGHT_ARROW   &kp LS(APOS)
+&kp LEFT_SHIFT    &trans             &trans             &trans           &trans            &trans    &kp DEL           &kp CLCK                                                                 &kp APOS
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
