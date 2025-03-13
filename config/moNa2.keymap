@@ -58,7 +58,7 @@
             label = "BT_MAC";
         };
 
-        new_macro: new_macro {
+        to_layer_0: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&to 0>;
