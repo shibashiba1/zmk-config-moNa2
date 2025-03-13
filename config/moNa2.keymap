@@ -152,7 +152,7 @@
 &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &mt LEFT_SHIFT LANG2  &lt 8 SPACE  &lt 10 LANG1    &kp BACKSPACE  &lt 9 ENTER                             &kp RIGHT_SHIFT
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp LG(PLUS) LG(MINUS)>;
         };
 
         Mac_1 {
