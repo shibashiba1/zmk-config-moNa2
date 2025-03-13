@@ -2,7 +2,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 #define MOUSE 6
@@ -137,31 +136,37 @@
             >;
         };
 
-        mac_0 {
+        Mac_0 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+&kp Q             &kp W         &kp E             &kp R                 &kp T                                       &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A             &kp S         &kp D             &kp F                 &kp G        &trans          &trans         &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&kp Z             &kp X         &kp C             &kp V                 &kp B        &tog 6          &trans         &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &mt LEFT_SHIFT LANG2  &lt 8 SPACE  &lt 10 LANG1    &kp BACKSPACE  &lt 9 ENTER                             &kp RIGHT_SHIFT
             >;
+
+            sensor-bindings = <&scroll_up_down>;
         };
 
-        mac_1 {
+        Mac_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+&kp ESCAPE        &kp LC(LA(LEFT_ARROW))  &kp LC(LA(C))      &kp LA(LC(RIGHT_ARROW))  &kp LS(NUMBER_1)                              &kp LC(LA(D))  &kp LC(LA(E))   &kp LC(LA(F))   &kp LA(LC(T))    &kp LA(LC(G))
+&kp TAB           &kp LS(N7)              &kp LS(N2)         &kp LS(N9)               &kp LS(N0)        &trans    &kp LEFT_CONTROL  &kp F19        &mkp MB1        &kp UP_ARROW    &mkp MB2         &kp LA(LC(ENTER))
+&kp LS(NUMBER_4)  &kp LS(BACKSLASH)       &kp LG(LC(SPACE))  &kp LS(N5)               &kp LS(N3)        &trans    &trans            &kp TILDE      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(APOS)
+&kp LEFT_SHIFT    &trans                  &trans             &trans                   &trans            &trans    &kp DEL           &kp CLCK                                                        &kp APOS
             >;
+
+            sensor-bindings = <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>;
         };
 
-        mac_2 {
+        Mac_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+&kp MINUS             &kp N7  &kp N8     &kp N9            &kp PLUS                                   &kp F2              &mkp MB3             &kp LC(UP_ARROW)    &kp F11          &kp LG(LS(NUMBER_4))
+&kp SLASH             &kp N4  &kp N5     &kp N6            &kp ASTERISK  &trans        &kp BACKSLASH  &kp LC(LEFT_ARROW)  &mkp MB1             &kp COLON           &mkp MB2         &kp LC(RIGHT_ARROW)
+&mt LEFT_SHIFT UNDER  &kp N1  &kp N2     &kp N3            &kp EQUAL     &kp C_MUTE    &trans         &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)  &kp LC(DOWN_ARROW)  &kp LC(LS(TAB))  &kp LC(TAB)
+&kp LEFT_ALT          &kp N0  &kp UNDER  &kp LEFT_COMMAND  &kp CLCK      &trans        &trans         &trans                                                                        &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         setting {
