@@ -82,10 +82,10 @@
 
         Mac_Win {
             bindings = <
-&kp ESCAPE        &kp LC(LA(LEFT_ARROW))  &kp LC(LA(C))      &kp LA(LC(RIGHT_ARROW))  &kp LS(NUMBER_1)                    &kp LC(LA(D))      &kp LC(LA(E))     &kp LC(LA(F))  &kp LA(LC(T))      &kp LA(LC(G))
-&kp TAB           &kp LS(N7)              &kp LS(N2)         &kp LS(N9)               &kp LS(N0)        &trans    &trans  &kp LC(K)          &kp LC(LA(LEFT))  &kp F11        &kp LC(LA(RIGHT))  &kp LA(LC(ENTER))
-&kp LS(NUMBER_4)  &kp LS(BACKSLASH)       &kp LG(LC(SPACE))  &kp LS(N5)               &kp LS(N3)        &trans    &trans  &kp LC(SEMICOLON)  &trans            &kp F19        &trans             &trans
-&kp LEFT_SHIFT    &trans                  &trans             &trans                   &trans            &trans    &trans  &trans                                                                 &trans
+&trans  &kp LC(LS(TAB))    &kp LC(UP)         &kp LC(TAB)  &kp LC(J)                     &kp LC(LA(D))      &kp LC(LA(E))     &kp LC(LA(F))  &kp LA(LC(T))      &kp LA(LC(G))
+&trans  &kp LC(LEFT)       &kp LS(LG(T))      &kp LS(N9)   &kp SPACE   &trans    &trans  &kp LC(K)          &kp LC(LA(LEFT))  &kp F11        &kp LC(LA(RIGHT))  &kp LA(LC(ENTER))
+&trans  &kp LS(BACKSLASH)  &kp LG(LC(SPACE))  &kp LS(N5)   &kp LS(N3)  &trans    &trans  &kp LC(SEMICOLON)  &trans            &kp F19        &trans             &trans
+&trans  &trans             &trans             &trans       &trans      &trans    &trans  &trans                                                                 &trans
             >;
         };
 
