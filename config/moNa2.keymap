@@ -82,10 +82,10 @@
 
         Mac_Win {
             bindings = <
-&trans  &kp LC(LS(TAB))    &kp LC(UP)         &kp LC(TAB)  &kp LC(J)                     &kp LC(LA(D))      &kp LC(LA(E))     &kp LC(LA(F))  &kp LA(LC(T))      &kp LA(LC(G))
-&trans  &kp LC(LEFT)       &kp LS(LG(T))      &kp LS(N9)   &kp SPACE   &trans    &trans  &kp LC(K)          &kp LC(LA(LEFT))  &kp F11        &kp LC(LA(RIGHT))  &kp LA(LC(ENTER))
-&trans  &kp LS(BACKSLASH)  &kp LG(LC(SPACE))  &kp LS(N5)   &kp LS(N3)  &trans    &trans  &kp LC(SEMICOLON)  &trans            &kp F19        &trans             &trans
-&trans  &trans             &trans             &trans       &trans      &trans    &trans  &trans                                                                 &trans
+&trans  &kp LC(LS(TAB))  &kp LC(UP)     &kp LC(TAB)    &kp LC(J)                            &kp LC(LA(D))      &kp LC(LA(E))     &kp LC(LA(F))  &kp LA(LC(T))      &kp LA(LC(G))
+&trans  &kp LC(LEFT)     &kp LS(LG(T))  &kp LC(RIGHT)  &kp SPACE          &trans    &trans  &kp LC(K)          &kp LC(LA(LEFT))  &kp F11        &kp LC(LA(RIGHT))  &kp LA(LC(ENTER))
+&trans  &kp LG(LEFT)     &kp LC(DOWN)   &kp LG(RIGHT)  &kp LC(LG(SPACE))  &trans    &trans  &kp LC(SEMICOLON)  &trans            &kp F19        &trans             &trans
+&trans  &trans           &trans         &trans         &trans             &trans    &trans  &trans                                                                 &trans
             >;
         };
 
