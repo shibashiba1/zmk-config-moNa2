@@ -157,10 +157,10 @@
 
         SymNum {
             bindings = <
-&kp LS(SEMI)   &kp LS(APOS)  &kp LS(GRAVE)  &kp LS(N1)  &kp LS(SLASH)                    &kp SLASH  &trans  &trans  &trans  &trans
-&kp BACKSLASH  &kp LS(N7)    &kp LS(N3)     &kp LBKT    &kp RBKT       &trans    &trans  &kp ASTRK  &trans  &trans  &trans  &trans
-&kp LS(N4)     &kp LS(N2)    &kp LS(N5)     &kp LS(N9)  &kp LS(N0)     &trans    &trans  &kp N0     &trans  &trans  &trans  &trans
-&mkp MB5       &trans        &trans         &trans      &trans         &trans    &trans  &trans                             &trans
+&kp LS(SEMI)   &kp LS(APOS)  &kp LS(GRAVE)  &kp LS(N1)  &kp LS(SLASH)                       &kp SLASH  &kp N7  &kp N8  &kp N9        &kp MINUS
+&kp BACKSLASH  &kp LS(N7)    &kp LS(N3)     &kp LBKT    &kp RBKT       &trans    &kp MINUS  &kp ASTRK  &kp N4  &kp N5  &kp N6        &kp LS(EQUAL)
+&kp LS(N4)     &kp LS(N2)    &kp LS(N5)     &kp LS(N9)  &kp LS(N0)     &trans    &kp UNDER  &kp N0     &kp N1  &kp N2  &kp NUMBER_3  &kp COMMA
+&mkp MB5       &trans        &trans         &trans      &trans         &trans    &trans     &trans                                   &kp EQUAL
             >;
         };
 
