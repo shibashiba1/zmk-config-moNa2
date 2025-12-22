@@ -186,7 +186,7 @@
 
         Func {
             bindings = <
-&kp HOME    &trans          &trans          &trans           &trans                        &bootloader  &trans    &trans    &trans     &kp RS(PRINTSCREEN)
+&kp HOME    &trans          &trans          &trans           &trans                        &bootloader  &trans    &trans    &trans     &kp PRINTSCREEN
 &kp LSHIFT  &trans          &msc SCRL_UP    &trans           &trans      &trans    &trans  &trans       &mkp MB1  &kp UP    &mkp MB2   &trans
 &trans      &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp K_MUTE  &trans    &trans  &trans       &kp LEFT  &kp DOWN  &kp RIGHT  &trans
 &kp END     &trans          &trans          &trans           &trans      &trans    &trans  &trans                                      &trans
