@@ -24,6 +24,16 @@
             bindings = <&kp LSHIFT>;
             key-positions = <10 11>;
         };
+
+        alt_R {
+            bindings = <&kp RA(SPACE)>;
+            key-positions = <31 32>;
+        };
+
+        alt_L {
+            bindings = <&kp RIGHT_ALT>;
+            key-positions = <35 36>;
+        };
     };
 
     behaviors {
